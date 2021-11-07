@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>INSERTING DATA</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="lo">
+      <ul>
+      <li style="margin-right:200px;"><a href="home.html"><i class="fa fa-power-off"></i>LOG-OUT</a></li>
+      <li><a href="insert.html"><i class="fa fa-pencil-square-o"></i>INSERT DATA</a></li>
+      <li><a href="update.html"><i class="fa fa-tasks"></i>UPDATE DATA</a></li>
+      <li><a href="delete.html"><i class="fa fa-window-close"></i>DELETE DATA</a></li>
+        </ul>
+      </div>
+    <div class="box">
+    <form action="insert.php" method="post">
+      <table cellspacing="10px">
+      <tr>
+      <td><label>SNO:</label></td>
+      <td><input type="number" name="sno" required></td>
+    </tr>
+    <tr>
+      <td><label>inst_code:</label></td>
+      <td><input type="text" name="inst_code"  required></td>
+    </tr>
+      <tr>
+        <td><label>inst_name:</label></td>
+        <td><input type="text" name="inst_name"  required></td>
+      </tr>
+      <tr>
+        <td><label>DIST:</label></td>
+        <td><input type="text" name="dist"  required></td>
+      </tr>
+      <tr>
+        <td>  <label>PLACE:</label></td>
+        <td><input type="text" name="place"  required></td>
+      </tr>
+      <tr>
+        <td><label>branch:</label></td>
+        <td><input type="text" name="branch"  required></td>
+      </tr>
+      <tr>
+        <td><label>OC_BO_YS:</label></td>
+        <td><input type="text" name="ocboys"  required></td>
+      </tr>
+      <tr>
+        <td><label>OC_GIRLS:</label></td>
+        <td>  <input type="text" name="ocgirls"  required></td>
+      </tr>
+      <tr>
+        <td>  <label>SC_BO_YS:</label></td>
+        <td><input type="text" name="scboys"  required></td>
+      </tr>
+      <tr>
+        <td><label>SC_GIRLS:</label></td>
+        <td><input type="text" name="scgirls"  required></td>
+      </tr>
+      <tr>
+        <td><label>BCA_BO_YS:</label></td>
+        <td><input type="text" name="bcaboys"  required></td>
+      </tr>
+        <tr>
+          <td><label>BCA_GIRLS:</label></td>
+          <td><input type="text" name="bcagirls"  required></td>
+        </tr>
+        <tr>
+          <td><label>BCB_BO_YS:</label></td>
+          <td><input type="text" name="bcbboys" required></td>
+        </tr>
+      <tr>
+        <td>  <label>BCB_GIRLS:</label></td>
+        <td><input type="text" name="bcbgirls"  required></td>
+      </tr>
+      <tr>
+        <td><label>BCD_BO_YS:</label></td>
+        <td>  <input type="text" name="bcdboys"  required></td>
+      </tr>
+      <tr>
+        <td>  <label>BCD_GI_RLS:</label></td>
+        <td><input type="text" name="bcdgirls"  required></td>
+      </tr>
+      </table>
+      <center><input type="submit" name="submit" value="insert"></center>
+    </form>
+    </div>
+  </body>
+</html>

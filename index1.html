@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>College Admission Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+    #field{
+      width:250px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li style="margin-right:550px; width:300px"><a href="index1.html"><i class="fa fa-building"></i>COLLEGE ADDMISSION PREDICTON</a></li>
+        <li><a href="home.html"><i class="fa fa-home"></i>HOME</a></li>
+        <li><a href="about.html"><i class="fa fa-user"></i>ABOUT</a></li>
+        <li><a href="help.html"><i class="fa fa-info-circle"></i>HELP</a></li>
+        <li><a href="Faqs.html"><i class="fa fa-question-circle"></i>FAQs</a></li>
+      </ul>
+    </div>
+  <br><br><br><br><br>
+  <form action="index1.php" method="POST">
+      <table cellspacing="10";align="center" >
+          <tr>
+            <td>
+                <label>EAMCET RANK</label>
+            </td>
+            <td>
+                <input id="field" type="number" name="rank" value="rank">
+            </td>
+          </tr>
+          <tr>
+            <td id = "ip">Branch</td>
+					  <td><select id = "field" name = "branch" required>
+						      <option value = "" hidden>select your Branch</option>
+                  <option value="CSE">CSE</option>
+                  <option value="ECE">ECE</option>
+                  <option value="MEC">MECH</option>
+                  <option value="CIV">CIVIL</option>
+                  <option value="INF">IT</option>
+                  <option value="EEE">EEE</option>
+                </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <label>DATE OF BIRTH</label>
+            </td>
+            <td>
+                <input id="field" type="date" name="date" value="date">
+            </td>
+          </tr>
+          <tr>
+            <td id = "ip">Category</td>
+					  <td><select id = "field" name = "caste" required>
+						    <option value = "" hidden>Select your Category</option>
+                <option value="OC_BO_YS">OC_BO_YS</option>
+                <option value="OC_GIR_LS">OC_GIR_LS</option>
+                <option value="SC_BOY_S">SC_BOY_S</option>
+                <option value="SC_GIR_LS">SC_GIR_LS</option>
+                <option value="BCA_B_OYS">BCA_B_OYS</option>
+                <option value="BCA_GI_RLS">BCA_GI_RLS</option>
+                <option value="BCB_B_OYS">BCB_B_OYS</option>
+                <option value="BCB_GI_RLS">BCB_GI_RLS</option>
+                <option value="BCD_B_OYS">BCD_B_OYS</option>
+                <option value="BCD_GI_RLS">BCD_GI_RLS</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+				     <td  colspan = "2"><input id = "b" type = "submit" name="Submit"  value = "Submit"></td>
+				</tr>
+      </table>
+    </form>
+  </body>
+</html>

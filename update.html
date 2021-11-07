@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>UPDATING DATA</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+     input , select{
+      width: 40%;
+      height: 5%;
+      border: 1px;
+      border-radius: 0.5%;
+      padding: 8px 15px 8px 15px;
+      margin: 10px 0px 15px 0px;
+      box-shadow: 1px 1px 2px 1px grey;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="lo">
+      <ul>
+    <li style="margin-right:200px;"><a href="home.html"><i class="fa fa-power-off"></i>LOG-OUT</a></li>
+      <li><a href="insert.html"><i class="fa fa-pencil-square-o"></i>INSERT DATA</a></li>
+      <li><a href="update.html"><i class="fa fa-tasks"></i>UPDATE DATA</a></li>
+      <li><a href="delete.html"><i class="fa fa-window-close"></i>DELETE DATA</a></li>
+        </ul>
+      </div>
+      <br><br><br><br><br><br>
+      <center>
+        <form class="del" action="update.php" method="post">
+          <input type="text" name="id" placeholder="Enter SNO of the row">
+          <br>
+          <select id = "field" name = "col" required>
+              <option value = "" hidden>Select column</option>
+              <option value="inst_code">inst_code</option>
+              <option value="inst_name">inst_name</option>
+              <option value="DIST">DIST</option>
+              <option value="PLACE">PLACE</option>
+              <option value="branch_code">branch_code</option>
+              <option value="OC_BO_YS">OC_BO_YS</option>
+              <option value="OC_GIR_LS">OC_GIR_LS</option>
+              <option value="SC_BOY_S">SC_BOY_S</option>
+              <option value="SC_GIR_LS">SC_GIR_LS</option>
+              <option value="BCA_B_OYS">BCA_B_OYS</option>
+              <option value="BCA_GI_RLS">BCA_GI_RLS</option>
+              <option value="BCB_B_OYS">BCB_B_OYS</option>
+              <option value="BCB_GI_RLS">BCB_GI_RLS</option>
+              <option value="BCD_B_OYS">BCD_B_OYS</option>
+              <option value="BCD_GI_RLS">BCD_GI_RLS</option>
+            </select>
+            <br>
+            <input type="text" name="newvalue" placeholder="Enter new value">
+            <br>
+          <input type="submit" name="update" value="Update data">
+        </form>
+      </center>
+  </body>
+</html>
